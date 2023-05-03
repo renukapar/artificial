@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block baseblock %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 align="center">Product List Display</h1>
+<table border="1px" align="center">
+    <thead>
+    <th>Productid</th>
+    <th>Product_Name</th>
+    <th>Price</th>
+    <th>Review</th>
+    </thead>
+    {% for i in prod %}
+    <tr>
+        <td>{{ i.Productid }}</td>
+        <td>{{ i.Product_Name }}</td>
+        <td>{{ i.Price }}</td>
+         <td>{{ i.Review }}</td>
+    </tr>
+    {%endfor%}
+</table>
+</body>
+{% endblock %}
+</html>

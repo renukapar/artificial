@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block baseblock %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>welcome to Product Display</h1>
+<div class="container" align="center">
+    <h1>WELCOME TO Product DisplayList</h1>
+    <form method="post" enctype="multipart/form-data" >
+        {{form.as_p}}
+        {%csrf_token%}
+        <button type="submit">Upload</button>
+
+    </form>
+</div>
+{% endblock %}
+</body>
+</html>

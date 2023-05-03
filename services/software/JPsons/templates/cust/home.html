@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% block baseblock %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'base1.css'%}">
+    <title>Title</title>
+</head>
+<body>
+<center>
+<h1>Welcome to JP Software Solutions</h1>
+<p >Create Amazing Business Websites
+Software Solutions is a fast-growing IT Company that provides holistic IT solutions to businesses across geographies We offer IT expertise in software, website, and application (iOS & Android) development;  Our team of experienced experts includes software developers, web developers, designers, and digital marketing experts (Since 2015).</p>
+</center>
+<img src="{% static 'images/jp1.jpg'%}" align="left" height="300px" width="400px">
+<img src="{% static 'images/jp3.jpg'%}" align="rightr" height="300px" width="500px">
+{% endblock %}
+
+</body>
+</html>
